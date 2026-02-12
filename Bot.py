@@ -5,7 +5,7 @@ from telegram.ext import Application, MessageHandler, filters, ContextTypes
 import yt_dlp
 
 
-TOKEN = '7999128516:AAE9VnUGvk3L7BWni60lGnxCM1EKYiQXQfg ' 
+TOKEN =os.getenv('BOT_TOKEN')
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     url = update.message.text
